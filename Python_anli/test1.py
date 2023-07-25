@@ -24,6 +24,7 @@ print(car1.color)
 def setSpeed(self,s):
     self.speed=s
 
+    print("第二次更改")
 import types
 car1.setSpeed=types.MethodType(setSpeed,car1) #动态为成员添加成员方法
 x=car1.setSpeed(50)
